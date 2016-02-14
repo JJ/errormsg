@@ -5,7 +5,7 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+@import url(https://fonts.googleapis.com/css?family=Arvo|Fira+Mono);
 .reveal a {
   line-height: 1.3em; }
 
@@ -129,14 +129,17 @@ body {
   quotes: none; }
 
 .reveal blockquote {
-  display: block;
-  position: relative;
-  width: 70%;
-  margin: 20px auto;
-  padding: 5px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+    font-size: 1.75em;
+    font-family: Merriweather;
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    padding: 7px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
