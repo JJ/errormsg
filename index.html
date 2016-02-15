@@ -253,8 +253,27 @@ process.argv.forEach(function (val, index, array) {
 	  función o subrutina... La pila de llamadas está compuesta de
 	  marcos de pila o stack frames. Y hay que recordar este
 	  concepto, porque es importante a la hora de interpretar un
-	      error. </aside>
+	      error. Un desbordamiento de pila es un error
+	      relativamente frecuente, que sucede, por ejemplo,
+	      cuando se asignan variables locales que ocupan demasiado
+	      espacio dentro de una
+	      función, o se está llamando a una función recursiva de
+	      forma infinita. Como con los paraguas, que se usan sin
+	      ningún tipo de limitación y así nos luce el pelo. Algo
+	      que te puede suceder también mentalmente si te empeñas
+	      en ejecutar algo que produce un error y lo sigue
+	      produciendo, ya sabes, abort, retry, fail, pues retry y
+	      más retry. </aside>
 	  </section>
+
+	  <section>
+	    <img src='img/tweet-so.png' alt='The only exception you will ever need'>
+	    <aside class='notes'>Este <a href='https://twitter.com/DivineOmega/status/695744177557106688'>tweet</a>,
+	    que además es reciente, resume una de las formas
+	    principales de averiguar qué diablos es lo que ocurre
+	    cuando tienes un error. Pero debe ser la última
+	      opción. Antes hay otras muchas.</aside></section>
+	  
 	</section> <!-- Fin de pila -->
 
 	<section><h3>Créditos</h3>
