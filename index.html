@@ -281,7 +281,7 @@ process.argv.forEach(function (val, index, array) {
 	      este caso.</aside>
 	  </section>
 
-	  <section data-background='img/selfie-con-error.jpg'
+	  <section data-background='img/selfi-con-error.jpg'
 	  alt='selfie con error'>
 	    <h2 class='bkg'>Nuevo género:</h2>
 	    <h1 class='bkg fragment'><em>Selfie</em> con error</h1>
@@ -292,6 +292,80 @@ process.argv.forEach(function (val, index, array) {
 	    </aside>
 	  </section>
 	</section> <!-- Fin de pila -->
+
+	<section><!-- fool proof -->
+	  <section
+	  data-background='https://farm8.staticflickr.com/7391/12752256845_0b2e4856d0_z_d.jpg'
+	  alt='usb poka yoke'>
+	    <h1 class='bkg'>Hazlo a prueba de fallos</h1>
+
+	    <aside class='notes'><a
+	      href='https://en.wikipedia.org/wiki/Poka-yoke'>Poka-yoke o ポカヨケ</a>
+	   es una técnica de diseño que intenta hacer algo a prueba de
+	      fallos. O al menos minimizando la posibilidad de que se
+	      produzca un error. Lo contrario que se ha hecho con el
+	      paraguas. Se hace y hala, a que toda una población
+	      incauta lo use y falle y vuelva a fallar sin que nadie
+	      se preocupe por que deje de hacerlo. O de prohibirlo.
+	    </aside>
+	  </section>
+
+	  <section
+	    data-background='https://farm4.staticflickr.com/3362/3546059144_1b33dfdc0e_o_d.jpg'
+	    alt='que todo funcione'>
+	    <aside class='notes'>Como informáticos, debemos intentar
+	    que los errores nos ocurran a nosotros, no al
+	    usuario. Para eso hay un sistema de desarrollo que intenta
+	    minimizar los errores; también se puede combinar con <a
+	    href='https://en.wikipedia.org/wiki/Error-tolerant_design'>sistemas
+	      tolerantes a errores</a></aside>
+	  </section>
+
+	  <section><h2>Si no está probado, está roto</h2>
+	    <pre><code>var test = require('tap').test,
+nodeo = require(__dirname + '/../../lib/nodeo.js');
+
+var utils = nodeo.utils,
+vector = nodeo.vector;
+
+test('loads', function (t) {
+    t.ok(vector, 'Loaded OK');
+    t.ok( vector.version, 'Version ' + vector.version + ' OK' );
+    t.end();
+});</code></pre>
+
+	    <aside class='notes'>Para la librería <a
+	      href='http://github.com/JJ/nodeo'>NodEO</a>, una
+	      librería de algoritmos evolutivos para Node, este es el
+	      código que prueba lo básico: que se cargue, que los
+	      vectores se generen con la longitud correcta... En
+	      general, el <a
+	      href='https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas'>desarrollo
+	      basado en test, TDD o guiado por pruebas</a> pone los
+	      tests antes que el código y se desarrolla contra los
+	      tests, que deben cubrir todos los posibles caminos del
+	      código, para lo que están los tests de cobertura. Estos
+	      tests se llaman tests unitarios, pero también son
+	      necesarios los ... Las metodologías TDD y otras
+	      similares, como Behavior Driven Design, usan librerías
+	      que ejecutan los tests como <code>nose</code> y otras
+	      que permiten programar los tests como todas las que se
+	      llaman <code>*unit</code>: pyunit, phpunit,
+	      junit... tests debe ir con código. Pero los programas
+	      completos también. 
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h2>Prueba todos los niveles</h2>
+	    <img src='http://imgur.com/download/qSN5SFR' alt='2 unit
+	    tests, 0 integration tests'>
+	    <aside class='notes'>A los tests unitarios los deben
+	    seguir tests de integración. Sin ellos, <a
+	    href='https://www.reddit.com/r/ProgrammerHumor/comments/40o6nc/2_unit_tests_0_integration_tests/'>Puede
+	      pasar algo así</a></aside>
+	  </section>
+	</section><!-- end fool proof o baka yoke-->
 
 	<section><h3>Créditos</h3>
 	  <ul class='creditcontainer'><li class='credits'><a href='https://www.flickr.com/photos/pame_figueroa/3834138653/'>Paraguas
@@ -315,6 +389,12 @@ process.argv.forEach(function (val, index, array) {
 	    <li class='credits'><a
 	  href='https://www.flickr.com/photos/togawanderings/14210516939/'>Pila
 	      de Thomas Galvez</a></li>
+	    <li class='credits'><a
+	  href='https://www.flickr.com/photos/glassholic/12752256845/'>USB
+	      de Etienne</a></li>
+	    <li class='credits'><a
+	  href='https://www.flickr.com/photos/epublicist/3546059144/'>El
+	      bloque cuadrado en el agujero redondo de Yoel Ben Avraham</a></li>
 	  </ul>
       </div>
 
