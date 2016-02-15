@@ -227,9 +227,36 @@ process.argv.forEach(function (val, index, array) {
               gamba, interesa saber por qué, incluso en programas simples
               como este.</aside>
 	  </section>
-	      
+
+	  <section>
+	    <img
+	    src='https://i.ytimg.com/vi/sCtY--xRUyI/hqdefault.jpg'
+	    alt='debugging'>
+	    <aside class='notes'>el <code>gdb</code> de la GNU
+	    permitía examinar la memoria, hacer un "bt" o backtrace
+	    que te decía el contenido de la pila y te permitía ver los
+	      contenidos de las variables en un marco u otro de la pila.</aside>
+	    
 	</section>
-	  
+
+	<section> <!-- Hablemos de la pila -->
+	  <section
+	    data-background='https://farm4.staticflickr.com/3923/14210516939_e8fc79faae_k_d.jpg'
+	  alt='la pila que se cae'>
+	    <h1 class='bkg'>La pila rebosa</h1>
+	    <aside class='notes'>La pila es un elemento importante en
+	      la depuración. Contiene información de todas las llamadas a
+	      funciones, junto con un <a
+	      href='https://en.wikipedia.org/wiki/Call_stack'> <em>stack
+	      frame</em></a> con más meta información: de dónde viene, a
+	      dónde va, variables locales, parámetros, contexto de la
+	  función o subrutina... La pila de llamadas está compuesta de
+	  marcos de pila o stack frames. Y hay que recordar este
+	  concepto, porque es importante a la hora de interpretar un
+	      error. </aside>
+	  </section>
+	</section> <!-- Fin de pila -->
+
 	<section><h3>Créditos</h3>
 	  <ul class='creditcontainer'><li class='credits'><a href='https://www.flickr.com/photos/pame_figueroa/3834138653/'>Paraguas
 		por Pame Figueroa</a></li>
@@ -246,6 +273,12 @@ process.argv.forEach(function (val, index, array) {
 	  verdes By Matthew Inman</a> - <a
 	  href='https://commons.wikimedia.org/w/index.php?curid=38250302'>CC
 	      BY 3.0, Wikipedia</a> </li>
+	    <li class='credits'>La imagen del debugger está sacada de
+	  <a href='https://www.youtube.com/watch?v=sCtY--xRUyI'>este
+	    tutorial de Youtube</a></li>
+	    <li class='credit'><a
+	  href='https://www.flickr.com/photos/togawanderings/14210516939/'>Pila
+	      de Thomas Galvez</a></li>
 	  </ul>
       </div>
 
