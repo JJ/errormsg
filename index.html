@@ -51,11 +51,11 @@
 	  único que sirve es para coreografiar bonitas canciones como
 	  "Singing in the rain" y para ser abandonado en algún lugar
 	  que uno luego no recuerda. Porque, ¿quién ha olvidado
-	  alguna vez algún paraguas en algún sitio? Y, por otro lado,
+	  alguna vez algún paraguas en algún sitio? Y, por otro lado y lo que es más importante,
 	  ¿quién ha acabado empapado después de usar un paraguas? Y,
 	  lo que es peor, quién se ha escurrido y se ha pegado un
 	  guarrazo por llevar un paraguas en la mano y no poder
-	  agarrarse a nada más cuando se escurre? Un gran error.</aside>
+	  agarrarse a nada más cuando se escurre? Un gran error. Todo es un error. </aside>
 	</section>
 	
 	<section><h1>Errar es humano</h1>
@@ -64,7 +64,7 @@
 
 	  <aside class='notes'>La cita
 	    investigada <a href='http://quoteinvestigator.com/2010/12/07/foul-computer/'>aquí,
-	      atribuyéndola a "Senator Soaper"</a>.Los ordenadores son realmente
+	      atribuyéndola a "Senator Soaper"</a>. Los ordenadores son realmente
 	    estúpidos, hay que contarle cómo hacer las cosas. Y en
 	    estas recetas el error puede provenir de muchas fuentes posibles. </aside>
 	</section>
@@ -75,7 +75,10 @@
 	  <h3>De "The jargon file"</h3>
 	  <aside class='notes'>De la misma forma que el paraguas es un
 	  artefacto mágico que te hace pensar que no te estás mojando
-	  aunque, en realidad, te estás poniendo sopa. Así que los errores han estado ahí
+	  aunque, en realidad, te estás poniendo sopa. Como me pasó a
+	  mi en las Canarias una vez. "Porque voy en manga corta,
+	  estoy en las Canarias y es mediados de julio, que si no
+	  estaría pasando un frío de cojones".  Así que los errores han estado ahí
 	    desde el principio, pero no siempre han sido de la misma forma.</aside>
 	</section>
 
@@ -89,14 +92,15 @@
 		   parpadeando o algo así. Nada que te permitiera
 		   averiguar qué era lo que había
 	      pasado. Un ejemplo de lo que le esperaba a un
-	      programador con algún problema: un reset y a figurarte qué
+	      programador con algún problema: un reset solo o a mano y a figurarte qué
 	      diablos había pasado. Lo peor no es que sucediera siempre,
-	      sino que sucediera sólo a veces...  Afortunadamente, con el tiempo se mejoró algo
+	      sino que sucediera sólo a veces...  Afortunadamente, con el tiempo se mejoró algo.
 	  </section>
 	  
 	  <section data-background='https://farm1.staticflickr.com/94/253736080_0bcb324038_o_d.jpg'
 		   alt='abort, retry, fail'>
-	    <aside class='notes'>Si has usado alguna máquina MSDOS,
+	    <aside class='notes'>Llegaron los 90 y se abandonaron las
+	      hombreras y los errores poco informativos. Si has usado alguna máquina MSDOS,
 	      seguro que te ha
 	      sucedido <a href='https://en.wikipedia.org/wiki/Abort,_Retry,_Fail%3F'>esto
 	      alguna vez</a>. Al menos era una mejora: te ofrecía un
@@ -142,7 +146,7 @@
 	    <aside class='notes'>Y normalmente da lugar a <a
 	  href='https://en.wikipedia.org/wiki/Error_message'>mensajes
 	      de error</a>, que es de lo que (principalmente) vamos a
-	      hablar hoy. Por eso reintentarlo no suele ser una buena
+	      hablar hoy. Y de paraguas. Por eso reintentarlo no suele ser una buena
 	  opción, como en las pelis cuando no funciona el teléfono que
 	  le dan al botón de colgar varias veces... El ordenador, el
 	  sistema operativo, el compilador, el programa, nos avisa de
@@ -152,7 +156,7 @@
 	  </section>
 
 	  <section>
-	    <h2>Error: Segmentation fault</h2>
+	    <h2>Error: <em>Segmentation fault</em></h2>
 	    <h3 class='fragment'>Tratamiento: core dumped</h3>
 	    <img
 	    src='https://farm4.staticflickr.com/3509/3823543639_60e80abf25_o_d.png'
@@ -163,15 +167,16 @@
 	    la memoria lanzado por el hardware.  Algo que podía
 	    suceder cada dos por tres cuando uno programaba en C o C++
 	    y accedía a memoria que no debía. Afortunadamente, de esa
-	    pantalla poco informativa salía algo informativo: el
+	    pantalla poco informativa salía alguna información: el
 	      <em>core dumped</em>, un volcado de la memoria que se
 	      podía analizar buscando culpables. Lo que aparecía en la
 	    pantalla era bastante poco informativo, pero lo que había
-	    en un fichero llamado CORE, no. Si fuera un paraguas,
-	    usarías el paraguas, acabarías empapado. Ahora, mira el
+	      en un fichero llamado <code>CORE</code>, no. Si fuera un paraguas,
+	    usarías el paraguas, acabarías empapado: error. Ahora, mira el
 	    paraguas y las varillas a ver dónde está el error. Lo que
-	    también es un error, porque el error es que no es una
-	    tienda de campaña. Sólo eso debería de ser una buena razón
+	    también es un error, porque el error de un paraguas es que no es una
+	    tienda de campaña. Sólo el hecho de que se pueden producir
+	      core dumped, y se producen, debería de ser una buena razón
 	    para no enseñar C, pero la gente sigue enseñando C, igual
 	    que usando paraguas. </aside>
 	  </section>
@@ -243,7 +248,8 @@ process.argv.forEach(function (val, index, array) {
 	  <section data-background='https://farm4.staticflickr.com/3923/14210516939_e8fc79faae_k_d.jpg' alt='la pila que se cae'>
 	    <h1 class='bkg'>La pila rebosa</h1>
 	    <aside class='notes'>La pila es un elemento importante en
-	      la depuración. Contiene información de todas las llamadas a
+	      la depuración y uno de los elementos más importantes
+	      para entender los mensajes de error. Contiene información de todas las llamadas a
 	      funciones, junto con un <a
 	      href='https://en.wikipedia.org/wiki/Call_stack'> <em>stack
 	      frame</em></a> con más meta información: de dónde viene, a
@@ -257,7 +263,8 @@ process.argv.forEach(function (val, index, array) {
 	      espacio dentro de una
 	      función, o se está llamando a una función recursiva de
 	      forma infinita. Como con los paraguas, que se usan sin
-	      ningún tipo de limitación y así nos luce el pelo. Algo
+	      ningún tipo de limitación y así nos luce el pelo (y se
+	      nos moja). Algo
 	      que te puede suceder también mentalmente si te empeñas
 	      en ejecutar algo que produce un error y lo sigue
 	      produciendo, ya sabes, abort, retry, fail, pues retry y
@@ -270,7 +277,9 @@ process.argv.forEach(function (val, index, array) {
 	    que además es reciente, resume una de las formas
 	    principales de averiguar qué diablos es lo que ocurre
 	    cuando tienes un error. Pero debe ser la última
-	      opción. Antes hay otras muchas. Y pasan por entender qué hace un programa y qué dicen los mensajes de error. </aside>
+	      opción. Antes hay otras muchas. Y pasan por entender qué
+	    hace un programa y qué dicen los mensajes de
+	    error. </aside> 
 	  </section>
 
 	  <section data-background='img/error.jpg' alt='mandándolo al grupo de whatsapp'>
@@ -278,7 +287,10 @@ process.argv.forEach(function (val, index, array) {
 	    <aside class='notes'>Solucionar un error pasa en muchos
 	    casos por pedir ayuda, y en muchos casos se hace en el
 	    grupo de Telegram o de Whatsapp que hay en clase, como en
-	      este caso.</aside>
+	      este caso. Muchas de las imágenes de errores que hay
+	    aquí son del grupo de Telegram de Infraestructura
+	    Virtual, una asignatura de 4º del grado de Ingeniería
+	    Informática. </aside>
 	  </section>
 
 	  <section data-background='img/selfi-con-error.jpg'
@@ -288,7 +300,7 @@ process.argv.forEach(function (val, index, array) {
 	    <aside class='notes'>Este género sale cuando no te has
 	  instalado el cliente whatsapp o Telegram en el portátil. Lo
 	  que hace a este una herramienta imprescindible a la hora de
-	  resolver errores'>
+	  resolver errores
 	    </aside>
 	  </section>
 	</section> <!-- Fin de pila -->
@@ -376,7 +388,7 @@ test('loads', function (t) {
 	alt='I broke the build'>
 	    <h1 class='bkg'>Integra continuamente</h1>
 	    <aside class='notes'>La integración continua se ocupa de
-	construir la aplicación, 
+	construir, es decir, compilar o procesar los fuentes de, la aplicación, 
 	pasar los tests automáticamente y, en su caso, de desplegarla
 	      en la nube en donde se nos haya ocurrido hacerlo</aside>
 	  </section>
@@ -413,7 +425,10 @@ script: >
 alt='has sido tú'>
 	    <h1 class='bkg'>Has sido tú</h1>
 	    <aside class='notes'>No es difícil averiguar quién se ha
-	      cargado el código</aside>
+	      cargado el código: el responsable del último
+	      commit. Todo esto supone que estás usando un sistema de
+	      gestión de fuentes como git, que deberías hacerlo, Y LO
+	      SABES. Pero cuando sucede el error...</aside>
 	  </section>
 
 	</section><!-- end fool proof o baka yoke-->
@@ -421,7 +436,8 @@ alt='has sido tú'>
 	<section><!-- Dónde está el error -->
 	  	<section data-background='img/error-rojo.jpg'>
 		  <h1 class='bkg'>¿Dónde está el error?</h1>
-		  <aside class='notes'>Cuando compilas o ejecutas algo
+		  <aside class='notes'>... Hay que averiguar qué es lo
+	  	que ha sucedido. Cuando compilas o ejecutas algo
 	  	puedes encontrarte con un error así. A veces hasta que
 	  	has pasado tests. Encontrar el error puede ser
 	  	    complicado, pero no imposible</aside>
@@ -444,7 +460,7 @@ alt='has sido tú'>
 		  paraguas son tan erróneos que ni siquiera tienen
 		  esto. Te mojas, y no sabes en qué punto del diseño a
 		  alguien se le ocurrió un chisme que cubriera tan
-		  poco y tan malamente, así que no puedes echarle la
+		  poco y tan malamente y que actuara como vela al viento, así que no puedes echarle la
 		  culpa a nadie.</aside>
 		</section>
 
@@ -466,7 +482,8 @@ alt='has sido tú'>
 	    src='https://farm8.staticflickr.com/7006/6508102407_4daeef6529_o_d.jpg'
 	    alt='418 soy una tetera'>
 	    <aside class='notes'>Los errores HTTP, por ejemplo, son
-	    claros, informativos y están bien definidos. Además,
+	    claros, informativos y están bien definidos, como este,
+	    que se definió en un RFC el 1 de abril de no sé cuando. Además,
 	    tienen una parte en el cliente, que es lo que vemos, y una
 	    parte en el servidor, que podemos consultar en los
 	    mensajes del registro, normalmente en error_log. Además,
@@ -497,7 +514,8 @@ alt='has sido tú'>
 	    funciona, hay dos opciones: el profesor no tiene ni
 	    puñetera idea de lo que está haciendo, lo que puede
 	    suceder, pero también hay otra opción: que no funcione. Os
-	    aconsejo que aunque penséis lo primero, miréis a ver si
+	    aconsejo que aunque penséis lo primero, es más, aunque
+	    estéis seguros de lo primero, miréis a ver si
 	    sucede lo segundo
 	      También pasa con los paraguas. Ahora me diréis que
 	      funcionan. ¡Pues no es cierto!</aside>
@@ -508,7 +526,8 @@ alt='has sido tú'>
 	<section
 	data-background='https://farm8.staticflickr.com/7003/6432795643_cf77d5da4d_b_d.jpg'
 	alt='cargo cult'>
-	  <h1 class='bkg'>Evita el <em>cargo cult</em></h1>
+	  <h1 class='bkg'>Para evitar errores, aparte de los tests
+	  anteriores (que no sirven de nada si no son completos), evita el <em>cargo cult</em></h1>
 	  <aside class='notes'>Se trata de programar copiando
 	secciones enteras de código, de transparencias o de lo que
 	    sea, sin entender realmente de qué se trata.<a
@@ -524,6 +543,7 @@ alt='has sido tú'>
 	<section
 	data-background='https://farm3.staticflickr.com/2637/4051466593_13a1cb9464_b_d.jpg'>
 	  <h1 class='bkg'>StackOverflow es tu amigo</h1>
+	  <h2 class='bkg fragment'>Pero tú debes ser su amigo también</h2>
 	  <aside class='notes'>Aunque debe ser el último
 	recurso. Poner el error entre comillas y buscar en
 	Google. Seguro que va a aparecer SO, pero no
@@ -538,7 +558,7 @@ alt='has sido tú'>
 
 	<section
 	data-background='https://farm9.staticflickr.com/8700/16870559579_930471e31c_z_d.jpg'
-	alt='pegatas stackoverflow'>
+	alt='pegatas GitHub'>
 	  <h1 class='bkg'><em>Issue</em> en <a
 	href='http://github.com/'>GitHub</a></h1>
 	  <aside class='notes'>Y esto gracias a que el 100%, o al
