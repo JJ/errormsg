@@ -214,10 +214,10 @@ void ea(){
 var rest = require('restler');
 var url = 'http://127.0.0.1:8080/contador/';
 process.argv.forEach(function (val, index, array) {
-    console.log( "Argumento " + index + " valor " + val );
+    console.log( "Argumento "+index+" valor "+val ); // Qué recibimos
     if ( index > 1 ) {
 	rest.put( url + val ).on('complete', function( data ) {
-	    console.log( data );
+	    console.log( data ); // Qué ha llegado
 	} );
     }
 });</code></pre>
@@ -321,7 +321,7 @@ process.argv.forEach(function (val, index, array) {
 	      tolerantes a errores</a></aside>
 	  </section>
 
-	  <section><h2>Si no está probado, está roto</h2>
+	  <section><h2>Si no lo has probado, está roto</h2>
 	    <pre><code>var test = require('tap').test,
 nodeo = require(__dirname + '/../../lib/nodeo.js');
 
@@ -363,7 +363,22 @@ test('loads', function (t) {
 	    <aside class='notes'>A los tests unitarios los deben
 	    seguir tests de integración. Sin ellos, <a
 	    href='https://www.reddit.com/r/ProgrammerHumor/comments/40o6nc/2_unit_tests_0_integration_tests/'>Puede
-	      pasar algo así</a></aside>
+	      pasar algo así</a>. Y eso incluye los <a
+	    href='stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test'>smoke
+	      o sanity checks y los tests de regresión o integración
+	    continua</a>, a los que hay que añadir los test de
+	    aceptación, de sistema o los test de pre-vuelo, hechos en
+	    un entorno como el de producción.</aside>
+	  </section>
+
+	  <section
+	data-background='https://farm6.staticflickr.com/5065/5626938236_90d8debc32_o_d.jpg'
+	alt='I broke the build'>
+	    <h1 class='bkg'>Integra continuamente</h1>
+	    <aside class='notes'>La integración continua se ocupa de
+	construir la aplicación, 
+	pasar los tests automáticamente y, en su caso, de desplegarla
+	      en la nube en donde se nos haya ocurrido hacerlo</aside>
 	  </section>
 	</section><!-- end fool proof o baka yoke-->
 
@@ -394,7 +409,11 @@ test('loads', function (t) {
 	      de Etienne</a></li>
 	    <li class='credits'><a
 	  href='https://www.flickr.com/photos/epublicist/3546059144/'>El
-	      bloque cuadrado en el agujero redondo de Yoel Ben Avraham</a></li>
+	      bloque cuadrado en el agujero redondo de Yoel Ben
+	  Avraham</a></li>
+	    <li class='credits'><a
+	  href='https://www.flickr.com/photos/dhaun/5626938236/'>Diablillo
+	      de Dirk Haun</a></li>
 	  </ul>
       </div>
 
